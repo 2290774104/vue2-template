@@ -13,7 +13,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "svg": "vsvg -s ./src/icons/svg -t ./src/icons/components --ext ts --es6"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -23,7 +24,8 @@
     "normalize.css": "^8.0.1",
     "vue": "^2.6.14",
     "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^9.1.2"
+    "vue-property-decorator": "^9.1.2",
+    "vue-svgicon": "^3.2.9"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.17.12",
