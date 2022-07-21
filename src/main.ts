@@ -1,15 +1,12 @@
 import Vue from 'vue';
-import router from '@/router';
-import App from './App.vue';
-import 'normalize.css';
-import SvgIcon from 'vue-svgicon';
-import '@/icons/components';
 
-Vue.use(SvgIcon, {
-  tagName: 'svg-icon',
-  defaultWidth: '1em',
-  defaultHeight: '1em'
-});
+import 'normalize.css';
+
+import App from './App.vue';
+import router from '@/router';
+
+import '@/permission';
+import '@/icons';
 
 Vue.config.productionTip = false;
 

@@ -6,6 +6,7 @@ specifiers:
   '@babel/preset-typescript': ^7.17.12
   '@types/jest': ^27.0.1
   '@types/lodash': ^4.14.182
+  '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^5.4.0
   '@typescript-eslint/parser': ^5.4.0
   '@vue/cli-plugin-babel': ~5.0.0
@@ -34,6 +35,7 @@ specifiers:
   lint-staged: ^13.0.3
   lodash: ^4.17.21
   normalize.css: ^8.0.1
+  nprogress: ^0.2.0
   prettier: ^2.7.1
   sass: ^1.32.7
   sass-loader: ^12.0.0
@@ -52,6 +54,7 @@ dependencies:
   eslint-plugin-prettier: 4.0.0_f9a5537566b3ca3b5b68fc99385c0ca6
   lodash: 4.17.21
   normalize.css: 8.0.1
+  nprogress: 0.2.0
   vue: 2.6.14
   vue-class-component: 7.2.6_vue@2.6.14
   vue-property-decorator: 9.1.2_cc5a81cd4d75b7f9736a3e9b263f47e5
@@ -64,6 +67,7 @@ devDependencies:
   '@babel/preset-typescript': 7.17.12
   '@types/jest': 27.5.2
   '@types/lodash': 4.14.182
+  '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 5.29.0_b91eb2252c43f5e27aa83e30d0085caf
   '@typescript-eslint/parser': 5.29.0_eslint@7.32.0+typescript@4.5.5
   '@vue/cli-plugin-babel': 5.0.6_fe8ac0eac192e7dad0587ef51a5d7b29
@@ -2132,6 +2136,10 @@ packages:
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/nprogress/0.2.0:
+    resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -7349,6 +7357,10 @@ packages:
     dependencies:
       path-key: 4.0.0
     dev: true
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+    dev: false
 
   /nth-check/1.0.2:
     resolution: {integrity: sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==}
