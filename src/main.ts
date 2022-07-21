@@ -1,14 +1,12 @@
 import Vue from 'vue';
-import App from './App.vue';
-import 'normalize.css';
-import SvgIcon from 'vue-svgicon';
-import '@/icons/components';
 
-Vue.use(SvgIcon, {
-  tagName: 'svg-icon',
-  defaultWidth: '1em',
-  defaultHeight: '1em'
-});
+import 'normalize.css';
+
+import '@/styles/index.scss'; // global css
+
+import App from './App.vue';
+
+import '@/icons';
 
 Vue.config.productionTip = false;
 
