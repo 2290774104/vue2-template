@@ -8,6 +8,7 @@ module.exports = defineConfig({
       extensions: ['.js', '.ts', '.vue', '.json']
     }
   },
+  transpileDependencies: ['vuex-module-decorators'],
   chainWebpack: config => {
     // These are some necessary steps changing the default webpack config of the Vue CLI
     // that need to be changed in order for Typescript based components to generate their
