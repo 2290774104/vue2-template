@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue, { DirectiveOptions } from 'vue';
 
 import 'normalize.css';
 
@@ -9,6 +9,13 @@ import router from '@/router';
 
 import '@/permission';
 import '@/icons';
+
+import * as filters from '@/filters';
+
+// 注册过滤函数
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, (filters as { [key: string]: Function })[key]);
+});
 
 Vue.config.productionTip = false;
 
