@@ -13,6 +13,8 @@ import '@/icons';
 import * as filters from '@/filters';
 import * as directives from '@/directives';
 
+import plugin from '@/plugin';
+
 // 注册过滤函数
 Object.keys(filters).forEach(key => {
   Vue.filter(key, (filters as { [key: string]: Function })[key]);
@@ -21,6 +23,8 @@ Object.keys(filters).forEach(key => {
 Object.keys(directives).forEach(key => {
   Vue.directive(key, (directives as { [key: string]: DirectiveOptions })[key]);
 });
+
+Vue.use(plugin);
 
 Vue.config.productionTip = false;
 
