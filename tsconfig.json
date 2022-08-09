@@ -43,7 +43,8 @@
     "types/shims.d.ts",
     "types/shims-vue.d.ts",
     "types/shims-tsx.d.ts",
-    "types/utils.d.ts"
+    "types/utils.d.ts",
+    "types/config.d.ts"
   ],
   "exclude": [
     "node_modules"

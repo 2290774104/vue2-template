@@ -1,3 +1,4 @@
+import axios from 'axios';
 import Vue, { DirectiveOptions } from 'vue';
 
 import 'normalize.css';
@@ -28,7 +29,17 @@ Vue.use(plugin);
 
 Vue.config.productionTip = false;
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app');
+axios
+  .get('/config.json')
+  .then(res => {
+    console.log(res);
+    Object.defineProperty(Vue.prototype, '$config', { value: res.data });
+
+    new Vue({
+      router,
+      render: h => h(App)
+    }).$mount('#app');
+  })
+  .catch(err => {
+    console.error(err, '项目初始化失败');
+  });

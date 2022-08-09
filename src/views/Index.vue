@@ -9,11 +9,14 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Components from '@/components/Index.vue';
+import { httpGetTest } from '@/api/test';
 
 @Component({ name: 'Index', components: { Components } })
 export default class Index extends Vue {
-  private created() {
+  private async created() {
     console.log(this.$utils.util());
+    const res = await httpGetTest({ a: 1 });
+    console.log(res);
   }
 }
 </script>
