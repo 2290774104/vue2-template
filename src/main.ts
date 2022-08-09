@@ -30,7 +30,7 @@ Vue.use(plugin);
 Vue.config.productionTip = false;
 
 axios
-  .get('/config.json')
+  .get('config.json')
   .then(res => {
     console.log(res);
     Object.defineProperty(Vue.prototype, '$config', { value: res.data });
